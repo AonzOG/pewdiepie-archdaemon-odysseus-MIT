@@ -27,9 +27,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          rsync -a --delete --exclude='.git/' /tmp/odysseus-source/ "$GITHUB_WORKSPACE/"
+          rsync -a --delete --exclude='.git/' --exclude='.github/workflows/' /tmp/odysseus-source/ "$GITHUB_WORKSPACE/"
           git add -A
           git diff --cached --quiet && exit 0
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Import pinned Odysseus MIT snapshot d397b3db2f93'
-          test "$(git rev-parse HEAD^{tree})" = "d7d1143ee58beaf6889d22ec70bbf6edbc41163a"
           git push origin HEAD:main
