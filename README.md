@@ -1,3 +1,165 @@
+# AonzOG Odysseus — MIT-Licensed Historical Snapshot
+
+This repository contains an imported historical snapshot of **Odysseus**, preserved from the final upstream revision released under the **MIT License**, immediately before the project's transition to the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later).
+
+The purpose of this repository is to retain an independently maintained copy of the Odysseus codebase as it existed at the selected revision, allowing subsequent development, modification, integration, redistribution, and commercial use in accordance with the applicable licence terms.
+
+## 1. Original Repository and Source Revision
+
+| Information | Details |
+|---|---|
+| Original project | Odysseus |
+| Historical upstream repository | `pewdiepie-archdaemon/odysseus` |
+| Current original upstream repository | https://github.com/odysseus-dev/odysseus |
+| Repository used for source import | https://github.com/arcahyadi/odysseus |
+| Historical upstream branch information | `dev` described as the default development branch; `main` described as the curated branch |
+| Source reference type | Historical commit-pinned snapshot (not a separately named branch) |
+| Source branch/snapshot link | https://github.com/arcahyadi/odysseus/tree/d397b3db2f93d36068a96e9524f8b6bfa4f09f0e |
+| Original commit ID / SHA-1 | `d397b3db2f93d36068a96e9524f8b6bfa4f09f0e` |
+| Original commit date | 9 June 2026, 01:31:43 UTC |
+| Original commit message | `Restore dropped regression fixes` |
+| Original commit author | `pewdiepie-archdaemon` |
+| **Number of upstream commits through this revision** | **1,057 (inclusive)** |
+| Git tree SHA-1 | `d7d1143ee58beaf6889d22ec70bbf6edbc41163a` |
+| Licence at selected revision | MIT License |
+
+**Commit count clarification:** The **1,057 upstream commits** represent the Git history reachable from the selected source commit, including that commit and its ancestors. This count was verified using the GitHub commits API for the exact revision: page 1,057 contains the repository's initial commit, and page 1,058 is empty when using `per_page=1`.
+
+This count does not represent the number of commits in the imported destination repository.
+
+**Branch identification:** The source URL identifies an immutable Git commit rather than a separately named branch. The README preserved at this revision describes `dev` as the upstream default development branch and `main` as the curated branch. This historical documentation is distinct from the destination repository's `main` branch.
+
+**Repository identity clarification:** The `arcahyadi/odysseus` repository and the original Odysseus repository are separate GitHub repositories. The selected source commit is also present in the original project's history, currently hosted at `odysseus-dev/odysseus`. The historical repository name `pewdiepie-archdaemon/odysseus` is preserved here for attribution and historical identification.
+
+## 2. Imported Repository Details
+
+| Information | Details |
+|---|---|
+| Repository name | `pewdiepie-archdaemon-odysseus-MIT` |
+| Repository owner | `AonzOG` |
+| Repository URL | https://github.com/AonzOG/pewdiepie-archdaemon-odysseus-MIT |
+| Destination branch | `main` |
+| Destination branch URL | https://github.com/AonzOG/pewdiepie-archdaemon-odysseus-MIT/tree/main |
+| Completed source import commit | `2b324ca68bffcc5982767fb7f5fa4554eba47016` |
+| Completed import commit URL | https://github.com/AonzOG/pewdiepie-archdaemon-odysseus-MIT/commit/2b324ca68bffcc5982767fb7f5fa4554eba47016 |
+| Import date | 11 October 2026 |
+| Tracked files imported | 1,005 |
+| Git directories | 62 |
+| Destination commits at completion | 9 |
+| Original licence preserved | MIT License |
+| Source tree integrity | Verified — exact Git tree SHA match |
+
+The source files were imported into a new Git repository with independent commit history.
+
+The destination contained **9 commits** upon completion of the import process. The original upstream history of **1,057 commits** was not reproduced in the destination repository.
+
+The completed import contains the same tracked source files, directory structure, file contents, and Git file modes as the selected upstream revision.
+
+No subsequent AGPL-licensed Odysseus revisions were included in the imported source snapshot.
+
+## 3. Source Integrity and Version Identification
+
+The imported source tree was verified against the original Odysseus revision.
+
+**Original upstream commit SHA-1:**
+
+`d397b3db2f93d36068a96e9524f8b6bfa4f09f0e`
+
+**Original upstream Git tree SHA-1:**
+
+`d7d1143ee58beaf6889d22ec70bbf6edbc41163a`
+
+**Imported repository Git tree SHA-1 (at completed import):**
+
+`d7d1143ee58beaf6889d22ec70bbf6edbc41163a`
+
+**Completed destination import commit SHA-1:**
+
+`2b324ca68bffcc5982767fb7f5fa4554eba47016`
+
+The identical Git tree hashes establish that the tracked file contents, paths, and Git file modes matched the original source snapshot at completion of the import.
+
+This verification applies to the initial imported source revision. Subsequent modifications to the destination repository, including an update to this README, will produce a different Git tree hash without changing the recorded identity of the original import.
+
+## 4. Licensing and Attribution
+
+The selected Odysseus revision contains the **MIT License**.
+
+The original licence file and its copyright notice were preserved in the imported repository.
+
+**Original project:** Odysseus
+
+**Original copyright notice:** Copyright (c) 2025 Odysseus Contributors
+
+**Original licence:** MIT License
+
+**Original licence file:**
+
+https://github.com/arcahyadi/odysseus/blob/d397b3db2f93d36068a96e9524f8b6bfa4f09f0e/LICENSE
+
+The MIT License permits software use, modification, redistribution, sublicensing, and commercial distribution, subject to retaining the required copyright and permission notices.
+
+Separately licensed third-party dependencies, assets, and components remain subject to their respective licence terms.
+
+## 5. Subsequent Upstream Licence Change
+
+The selected source commit represents the **last MIT-licensed revision immediately preceding the upstream licence transition**.
+
+The next adjacent upstream commit replaced the MIT License with **AGPL-3.0-or-later**.
+
+| Information | Details |
+|---|---|
+| Last MIT commit | `d397b3db2f93d36068a96e9524f8b6bfa4f09f0e` |
+| Last MIT commit date | 9 June 2026, 01:31:43 UTC |
+| Immediately subsequent commit | `c5230e85a94f499e5938a42309c43c652cade21c` |
+| Licence-change commit date | 9 June 2026, 05:25:04 UTC |
+| Licence-change commit message | `Change project license to AGPL-3.0-or-later` |
+| Previous licence | MIT |
+| Subsequent licence | AGPL-3.0-or-later |
+| Commits separating the two revisions | Exactly 1 |
+
+**Licence-change commit:**
+
+https://github.com/arcahyadi/odysseus/commit/c5230e85a94f499e5938a42309c43c652cade21c
+
+The licence-change commit modified the upstream `LICENSE` and `README.md` files.
+
+This preservation repository is based exclusively on the preceding MIT-licensed revision. Later upstream changes are not automatically incorporated. Any future adoption of upstream changes must be assessed under the applicable licences.
+
+## 6. Repository Maintenance and Independent Development
+
+This repository establishes the specified historical MIT-licensed Odysseus revision as its original imported codebase.
+
+Future development, bug fixes, security improvements, feature additions, and integrations may be undertaken independently by the repository owner.
+
+The repository is not automatically synchronized with the latest upstream Odysseus releases.
+
+Future changes to the upstream project's codebase or licensing do not automatically modify the historical source revision preserved here.
+
+For an exact record of the original imported source, refer to:
+
+- **Original source snapshot:** https://github.com/arcahyadi/odysseus/tree/d397b3db2f93d36068a96e9524f8b6bfa4f09f0e
+- **Original source commit:** https://github.com/arcahyadi/odysseus/commit/d397b3db2f93d36068a96e9524f8b6bfa4f09f0e
+- **Original project history:** https://github.com/odysseus-dev/odysseus
+- **Completed destination import:** https://github.com/AonzOG/pewdiepie-archdaemon-odysseus-MIT/commit/2b324ca68bffcc5982767fb7f5fa4554eba47016
+
+### Cloning the Preserved MIT Snapshot
+
+To clone this preserved revision from AonzOG rather than the current upstream development repository:
+
+```bash
+git clone https://github.com/AonzOG/pewdiepie-archdaemon-odysseus-MIT.git
+cd pewdiepie-archdaemon-odysseus-MIT
+```
+
+The original README retained below contains historical upstream repository links and installation commands. Those references are intentionally preserved as part of the original source documentation. For the independently maintained MIT snapshot, use the AonzOG repository URL above.
+
+---
+
+**Original Odysseus README follows below, retained without modification.**
+
+---
+
 # Odysseus
 
 > **Branch note:** `dev` is the default branch and contains the latest development changes, but it may be unstable. For the more stable curated branch, use [`main`](https://github.com/pewdiepie-archdaemon/odysseus/tree/main).
