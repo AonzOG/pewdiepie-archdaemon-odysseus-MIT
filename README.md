@@ -1,4 +1,4 @@
-# AonzOG Odysseus — MIT-Licensed Historical Snapshot
+# AonzOG Odysseus — MIT-Licensed Historical Snapshot 11-10-2026
 
 This repository contains an imported historical snapshot of **Odysseus**, preserved from the final upstream revision released under the **MIT License**, immediately before the project's transition to the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later).
 
