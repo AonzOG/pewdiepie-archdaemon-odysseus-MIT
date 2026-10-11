@@ -647,6 +647,41 @@ def test_public_agent_policy_hides_sensitive_tools(monkeypatch):
     assert "manage_tasks" in blocked
 
 
+def test_presetup_denies_admin_tools_when_auth_is_enabled(monkeypatch):
+    monkeypatch.delenv("AUTH_ENABLED", raising=False)
+    auth_mod = _install_core_auth_stub(monkeypatch)
+
+    class FakeAuth:
+        is_configured = False
+
+        def is_admin(self, username):
+            return False
+
+    monkeypatch.setattr(auth_mod, "AuthManager", lambda: FakeAuth())
+    from src.tool_security import owner_is_admin_or_single_user, blocked_tools_for_owner
+
+    assert owner_is_admin_or_single_user(None) is False
+    blocked = blocked_tools_for_owner(None)
+    assert {"bash", "python"}.issubset(blocked)
+
+
+def test_disabled_auth_retains_single_user_tool_access(monkeypatch):
+    monkeypatch.setenv("AUTH_ENABLED", "false")
+    auth_mod = _install_core_auth_stub(monkeypatch)
+
+    class FakeAuth:
+        is_configured = False
+
+        def is_admin(self, username):
+            return False
+
+    monkeypatch.setattr(auth_mod, "AuthManager", lambda: FakeAuth())
+    from src.tool_security import owner_is_admin_or_single_user, blocked_tools_for_owner
+
+    assert owner_is_admin_or_single_user(None) is True
+    assert blocked_tools_for_owner(None) == set()
+
+
 @pytest.mark.asyncio
 async def test_webhook_tool_reuses_private_url_validation():
     class FakeDb:
